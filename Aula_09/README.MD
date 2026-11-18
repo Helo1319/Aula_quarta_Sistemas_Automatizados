@@ -22,7 +22,7 @@ Duas células de produção e uma sala de controle, com 120 m entre elas e EMI e
 
 ## 3. Decisões principais
 - **Zonas:** Supervisão (VLAN 10, 10.20.10.0/24), Célula A (VLAN 30, 10.20.30.0/24) e Célula B (VLAN 40, 10.20.40.0/24), roteadas pelo SW-SUP (L3).
-- **Célula A:** PROFINET em cobre Cat6A blindado. Foi a alternativa com maior pontuação na matriz (107 contra 85 do Ethernet comum), e o Modbus RTU foi eliminado por incompatibilidade com RIO e inversores.
+- **Célula A:** PROFINET em cobre Cat6A blindado. Foi a alternativa com maior pontuação na matriz (95 pontos contra 70 do Ethernet comum), e o Modbus RTU foi eliminado por incompatibilidade com RIO e inversores.
 - **Célula B:** o controlador legado permanece em Modbus RTU (RS-485, endereço 5) e é integrado por um gateway (GW-B) Modbus RTU para Modbus TCP.
 - **Backbone:** fibra óptica entre SW-SUP e os switches das células, porque 120 m excede o limite de 100 m do cobre e a fibra é imune a EMI.
 - **Endereçamento:** IP estático nos ativos críticos, faixas reservadas por função e a faixa 50-59 de cada zona reservada para expansão.
